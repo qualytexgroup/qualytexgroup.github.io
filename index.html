@@ -1,46 +1,127 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Eventually by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualytex Group - Wholesale Distributor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #111;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .category {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .reviews {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-top: 3rem;
+    }
+    .review {
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Qualytex Group LLC</h1>
+    <p>Your Trusted Wholesale Distributor & Exporter</p>
+  </header>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Eventually</h1>
-				<p>A simple template for telling the world when you'll launch<br />
-				your next big thing. Brought to you by <a href="http://html5up.net">HTML5 UP</a>.</p>
-			</header>
+  <nav>
+    <a href="#categories">Categories</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form>
+  <section id="categories">
+    <h2>Product Categories</h2>
+    <div class="categories">
+      <div class="category">
+        <h3>Beauty & Care</h3>
+        <p>Skincare, haircare, and cosmetic products from top brands.</p>
+      </div>
+      <div class="category">
+        <h3>Health Care</h3>
+        <p>Supplements, wellness products, and over-the-counter essentials.</p>
+      </div>
+      <div class="category">
+        <h3>Pet Supply</h3>
+        <p>High-quality products for your furry friends.</p>
+      </div>
+      <div class="category">
+        <h3>Electronics</h3>
+        <p>Latest gadgets, accessories, and consumer electronics.</p>
+      </div>
+    </div>
+  </section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+  <section id="reviews" class="reviews">
+    <h2>What Our Clients Say</h2>
+    <div class="review">
+      <p>"Excellent customer service and very fast shipping. Highly recommended!" – Anna G.</p>
+    </div>
+    <div class="review">
+      <p>"Great selection of products and unbeatable prices. I always buy from Qualytex." – Michael D.</p>
+    </div>
+    <div class="review">
+      <p>"We've been working with Qualytex for 2 years now, and their reliability is top-notch." – Carla T.</p>
+    </div>
+  </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: sales@qualytexgroup.com</p>
+    <p>Phone: (470) 922-2230</p>
+    <p>Location: 2626 Loop W Ste 130, Houston, TX</p>
+  </section>
 
-	</body>
+  <footer>
+    <p>&copy; 2025 Qualytex Group LLC. All rights reserved.</p>
+  </footer>
+</body>
 </html>
