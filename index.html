@@ -1,127 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qualytex Group - Wholesale Distributor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distribuidora Global Solutions</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background-color: #222;
-      color: #fff;
-      padding: 2rem;
+      background-color: #1a73e8;
+      color: white;
+      padding: 1.5em;
       text-align: center;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: #111;
-      padding: 1rem;
+      background-color: #004080;
+      color: white;
+      padding: 0.8em;
+      text-align: center;
     }
     nav a {
-      color: #fff;
+      margin: 0 15px;
+      color: white;
       text-decoration: none;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+      padding: 2em;
     }
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
+    .categories, .reviews {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .category {
-      background-color: #fff;
-      padding: 1rem;
+    .card {
+      background-color: white;
+      padding: 1em;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      width: 250px;
     }
-    .reviews {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-top: 3rem;
-    }
-    .review {
-      margin-bottom: 1.5rem;
+    .card h3 {
+      margin-top: 0;
     }
     footer {
-      background-color: #222;
-      color: #fff;
+      background-color: #1a73e8;
+      color: white;
       text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
+      padding: 1em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      padding: 0.8em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Qualytex Group LLC</h1>
-    <p>Your Trusted Wholesale Distributor & Exporter</p>
-  </header>
 
-  <nav>
-    <a href="#categories">Categories</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+  <h1>Distribuidora Global Solutions</h1>
+  <p>Proveemos calidad y confianza en productos para tu negocio</p>
+</header>
 
-  <section id="categories">
-    <h2>Product Categories</h2>
-    <div class="categories">
-      <div class="category">
-        <h3>Beauty & Care</h3>
-        <p>Skincare, haircare, and cosmetic products from top brands.</p>
-      </div>
-      <div class="category">
-        <h3>Health Care</h3>
-        <p>Supplements, wellness products, and over-the-counter essentials.</p>
-      </div>
-      <div class="category">
-        <h3>Pet Supply</h3>
-        <p>High-quality products for your furry friends.</p>
-      </div>
-      <div class="category">
-        <h3>Electronics</h3>
-        <p>Latest gadgets, accessories, and consumer electronics.</p>
-      </div>
+<nav>
+  <a href="#categorias">Categorías</a>
+  <a href="#reseñas">Opiniones</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="categorias">
+  <h2>Categorías de Productos</h2>
+  <div class="categories">
+    <div class="card">
+      <h3>Beauty & Care</h3>
+      <p>Cosméticos, cuidado del cabello y más.</p>
     </div>
-  </section>
-
-  <section id="reviews" class="reviews">
-    <h2>What Our Clients Say</h2>
-    <div class="review">
-      <p>"Excellent customer service and very fast shipping. Highly recommended!" – Anna G.</p>
+    <div class="card">
+      <h3>Health Care</h3>
+      <p>Suplementos, vitaminas, artículos médicos.</p>
     </div>
-    <div class="review">
-      <p>"Great selection of products and unbeatable prices. I always buy from Qualytex." – Michael D.</p>
+    <div class="card">
+      <h3>Pet Supply</h3>
+      <p>Comida, juguetes, artículos de higiene para mascotas.</p>
     </div>
-    <div class="review">
-      <p>"We've been working with Qualytex for 2 years now, and their reliability is top-notch." – Carla T.</p>
+    <div class="card">
+      <h3>Electrónicos</h3>
+      <p>Accesorios, gadgets, pequeños electrodomésticos.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: sales@qualytexgroup.com</p>
-    <p>Phone: (470) 922-2230</p>
-    <p>Location: 2626 Loop W Ste 130, Houston, TX</p>
-  </section>
+<section id="reseñas">
+  <h2>Opiniones de Nuestros Clientes</h2>
+  <div class="reviews">
+    <div class="card">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Excelente servicio al cliente y productos de calidad. Muy recomendados."</p>
+      <p><strong>- Mariana G.</strong></p>
+    </div>
+    <div class="card">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Recibimos todo a tiempo y en perfectas condiciones. Los productos de pet supply son top."</p>
+      <p><strong>- Carlos R.</strong></p>
+    </div>
+    <div class="card">
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"Un distribuidor confiable. Exportamos a Centroamérica sin problemas. 100% satisfechos."</p>
+      <p><strong>- J.M. Export Group</strong></p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Qualytex Group LLC. All rights reserved.</p>
-  </footer>
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form>
+    <input type="text" placeholder="Nombre de tu empresa" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea rows="4" placeholder="Mensaje o solicitud de cotización"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Distribuidora Global Solutions - Todos los derechos reservados</p>
+</footer>
+
 </body>
 </html>
