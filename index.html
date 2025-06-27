@@ -2,149 +2,57 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Distribuidora Global Solutions</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background-color: #1a73e8;
-      color: white;
-      padding: 1.5em;
-      text-align: center;
-    }
-    nav {
-      background-color: #004080;
-      color: white;
-      padding: 0.8em;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2em;
-    }
-    .categories, .reviews {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .card {
-      background-color: white;
-      padding: 1em;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      width: 250px;
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    footer {
-      background-color: #1a73e8;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 400px;
-      margin: auto;
-    }
-    input, textarea {
-      padding: 0.8em;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #1a73e8;
-      color: white;
-      padding: 0.8em;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualytex Group - Distribución Mayorista</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
+  <header class="bg-blue-900 text-white p-4 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Qualytex Group</h1>
+      <nav class="space-x-4">
+        <a href="#quienes" class="hover:underline">Quiénes Somos</a>
+        <a href="#servicios" class="hover:underline">Servicios</a>
+        <a href="#contacto" class="hover:underline">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>Distribuidora Global Solutions</h1>
-  <p>Proveemos calidad y confianza en productos para tu negocio</p>
-</header>
+  <section class="bg-blue-100 py-16 text-center">
+    <h2 class="text-4xl font-bold mb-4">Distribución mayorista de marcas reconocidas</h2>
+    <p class="text-lg max-w-2xl mx-auto">Somos una empresa dedicada a la distribución y exportación de productos de consumo masivo, garantizando stock constante y relaciones sólidas con nuestros proveedores y clientes.</p>
+  </section>
 
-<nav>
-  <a href="#categorias">Categorías</a>
-  <a href="#reseñas">Opiniones</a>
-  <a href="#contacto">Contacto</a>
-</nav>
+  <section id="quienes" class="container mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">¿Quiénes Somos?</h3>
+    <p>Qualytex Group es una empresa establecida en Estados Unidos dedicada a la distribución mayorista de productos de marcas líderes. Nuestro compromiso es ofrecer un servicio profesional, confiable y ágil, cumpliendo con los más altos estándares del mercado.</p>
+  </section>
 
-<section id="categorias">
-  <h2>Categorías de Productos</h2>
-  <div class="categories">
-    <div class="card">
-      <h3>Beauty & Care</h3>
-      <p>Cosméticos, cuidado del cabello y más.</p>
+  <section id="servicios" class="bg-white py-12">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Nuestros Servicios</h3>
+      <ul class="list-disc ml-6">
+        <li>Distribución mayorista de productos de consumo masivo</li>
+        <li>Exportación e importación de mercancía</li>
+        <li>Asesoría en abastecimiento para retailers y mayoristas</li>
+        <li>Logística eficiente y cumplimiento de tiempos de entrega</li>
+      </ul>
     </div>
-    <div class="card">
-      <h3>Health Care</h3>
-      <p>Suplementos, vitaminas, artículos médicos.</p>
-    </div>
-    <div class="card">
-      <h3>Pet Supply</h3>
-      <p>Comida, juguetes, artículos de higiene para mascotas.</p>
-    </div>
-    <div class="card">
-      <h3>Electrónicos</h3>
-      <p>Accesorios, gadgets, pequeños electrodomésticos.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="reseñas">
-  <h2>Opiniones de Nuestros Clientes</h2>
-  <div class="reviews">
-    <div class="card">
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>"Excelente servicio al cliente y productos de calidad. Muy recomendados."</p>
-      <p><strong>- Mariana G.</strong></p>
-    </div>
-    <div class="card">
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>"Recibimos todo a tiempo y en perfectas condiciones. Los productos de pet supply son top."</p>
-      <p><strong>- Carlos R.</strong></p>
-    </div>
-    <div class="card">
-      <p>⭐⭐⭐⭐⭐</p>
-      <p>"Un distribuidor confiable. Exportamos a Centroamérica sin problemas. 100% satisfechos."</p>
-      <p><strong>- J.M. Export Group</strong></p>
-    </div>
-  </div>
-</section>
+  <section id="contacto" class="container mx-auto py-12">
+    <h3 class="text-2xl font-semibold mb-4">Contacto</h3>
+    <p>Correo: <a href="mailto:info@qualytex-group.com" class="text-blue-700">info@qualytex-group.com</a></p>
+    <p>Teléfono: <span class="text-blue-700">+1 (123) 456-7890</span></p>
+    <p>Dirección: <span class="text-blue-700">2626 S Loop W, Houston, TX, USA</span></p>
+  </section>
 
-<section id="contacto">
-  <h2>Contáctanos</h2>
-  <form>
-    <input type="text" placeholder="Nombre de tu empresa" required>
-    <input type="email" placeholder="Correo electrónico" required>
-    <textarea rows="4" placeholder="Mensaje o solicitud de cotización"></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
+  <footer class="bg-blue-900 text-white text-center p-4">
+    <p>&copy; 2025 Qualytex Group. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
 
-<footer>
-  <p>© 2025 Distribuidora Global Solutions - Todos los derechos reservados</p>
-</footer>
 
 </body>
 </html>
