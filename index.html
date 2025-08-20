@@ -1,201 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Qualytex Group</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-    body {
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      background: #0d0d0d;
-      color: white;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 600;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1581092919535-42cfa7eec5ab') center/cover no-repeat;
-      height: 80vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 1rem 2rem;
-      border-radius: 8px;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .about, .products, .testimonials, .contact {
-      margin-top: 2rem;
-    }
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-    .product {
-      border: 1px solid #eee;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-    .product img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .product h3 {
-      margin: 1rem 0;
-    }
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-    }
-    .testimonial {
-      border: 1px solid #ccc;
-      padding: 1.5rem;
-      border-radius: 10px;
-      background-color: #fafafa;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.03);
-    }
-    .testimonial p {
-      font-style: italic;
-    }
-    .testimonial h4 {
-      margin-top: 1rem;
-      text-align: right;
-      font-weight: 600;
-    }
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .contact input, .contact textarea {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    .contact button {
-      background: #0d0d0d;
-      color: white;
-      padding: 0.75rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #f1f1f1;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">Qualytex Group</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://qualytex-group.com/">
+        <meta property="og:title" content="Qualytex Group: Wholesale Products You Can Trust, Delivered On Time">
+        <meta property="og:description" content="Reliable Wholesale Distribution for top-quality pet supplies, beauty & personal care, tools & home improvement, and small appliances.">
+        <meta property="og:image" content="./images/OG.jpg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
 
-  <section class="hero" id="home">
-    <h1>Reliable Wholesale Distribution</h1>
-  </section>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Qualytex Group: Wholesale Products You Can Trust, Delivered On Time">
+        <meta name="twitter:description" content="Reliable Wholesale Distribution for pet supplies, beauty & personal care, tools, home improvement, and small appliances.">
+        <meta name="twitter:image" content="./images/OG.jpg">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Qualytex Group - Welcome</title>
+        <link rel="icon" href="icons/Icon-logo.svg" sizes="any">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <section class="about" id="about">
-    <h2 class="section-title">About Us</h2>
-    <p>
-      Qualytex Group is a dedicated wholesale distributor offering top-tier consumer products across various categories. We prioritize quality, reliability, and long-term partnerships with our clients.
-    </p>
-  </section>
-
-  <section class="products" id="products">
-    <h2 class="section-title">Our Products</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://source.unsplash.com/random/300x200?electronics" alt="Product 1">
-        <h3>Electronics</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/random/300x200?beauty" alt="Product 2">
-        <h3>Beauty & Personal Care</h3>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/random/300x200?home" alt="Product 3">
-        <h3>Home Essentials</h3>
-      </div>
+    </head>
+    <body>
+    
+    <header>
+        <div class="logo">
+            <img src="icons/Icon-logo.svg" alt="Qualytex Group">
+            <span>Qualytex Group</span>
+        </div>
+        <div class="nav">
+            <a href="https://qualytex-group.com">Home</a>
+            <a href="#distribution">Distribution</a>
+            <a href="#aboutus">About</a>
+            <a href="#products">Products</a>
+            <a href="#testimonials">Testimonials</a>
+        </div>
+        <div>
+            <a href="#contactus" class="button">
+                
+Get a Quote
+                <img src="icons/arrow-right-white.svg">
+            </a>
+        </div>
+    </header>
+    
+    <div class="hero">
+        <div class="containerhero">
+            <div class="left">
+                <h1>Wholesale Products You Can Trust, Delivered On Time, Every Time.</h1>
+                <p>Reliable Wholesales Distribution, powered by Qualytex Group — your trusted source for top-quality pet supplies, beauty & personal care, tools & home improvement, and small appliances.</p>
+                <a href="#contactus" class="button">Get a Wholesale Quote</a>
+                <div class="spacing"></div>
+                <div class="herostats">
+                    <div>
+                        <h2>5K+</h2>
+                        <p>Businesses Served Worldwide</p>
+                    </div>
+                    <div>
+                        <h2>100%</h2>
+                        <p>On-Time Delivery Guarantee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right"></div>
     </div>
-  </section>
-
-  <section class="testimonials" id="testimonials">
-    <h2 class="section-title">What Our Clients Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>"Qualytex has been our trusted supplier for years. Their commitment to quality and service is unmatched."</p>
-        <h4>— Sarah M., Retailer</h4>
-      </div>
-      <div class="testimonial">
-        <p>"Efficient logistics and great communication. Our go-to partner in wholesale distribution."</p>
-        <h4>— Daniel K., E-commerce Store Owner</h4>
-      </div>
+    
+    <div class="why" id="distribution">
+        <div class="title">
+            <h2>Why Businesses Choose Reliable Wholesales Distribution</h2>
+            <p>We don’t just supply products — we build long-term partnerships based on trust, quality, and results.</p>
+        </div>
+        
+        <div class="multiplecards">
+            <div class="card">
+                <h3>Wide Product Range</h3>
+                <p>From everyday essentials to specialty items in our key categories.</p>
+            </div>
+            <div class="card">
+                <h3>Competitive Wholesale Pricing</h3>
+                <p>Helping you maximize profit margins.</p>
+            </div>
+            <div class="card">
+                <h3>On-Time Delivery</h3>
+                <p>Consistent, dependable shipping to keep your business running smoothly.</p>
+            </div>
+            <div class="card">
+                <h3>Dedicated Account Support</h3>
+                <p>Real people, real solutions for your unique needs.</p>
+            </div>
+        </div>
     </div>
-  </section>
+    
+    <div class="floatingsection" id="aboutus">
+        <div class="img-background">
+            <div class="container">
+            <div class="left">
+                <span class="tag">ABOUT US</span>
+                <h2>Your Trusted Wholesale Distribution Partner</h2>
+                <p>
+                    Reliable, efficient wholesale distribution services tailored to your business needs, ensuring quality products, timely delivery, and complete customer satisfaction.
+                </p>
+            </div>
+            <div class="right">
+            <p>Welcome to <strong>Reliable Wholesales Distribution</strong>, powered by <strong>Qualytex Group</strong> — your premier source for high-quality <strong>pet supplies, beauty & personal care, tools & home improvement</strong>, and small appliances.
+We are committed to building lasting partnerships by delivering <strong>top-tier products, competitive wholesale pricing</strong>, and <strong>dependable service</strong>. Count on us for seamless operations and peace of mind, knowing your orders will arrive <strong> on time and in perfect condition.</strong>
+Experience excellence with our expertise in wholesale distribution.</p>
+               <div class="stats">
+                    <div>
+                        <h3>5K+</h3>
+                        <p><strong>Businesses Served</strong></p>
+                        <p>Worldwide wholesale clients</p>
+                    </div>
+                    <div>
+                        <h3>100%</h3>
+                        <p><strong>Quality Guarantee</strong></p>
+                        <p>Commitment to product excellence</p>
+                    </div>
+                    <div>
+                        <h3>15+</h3>
+                        <p><strong>Years of Experience</strong></p>
+                        <p>In wholesale distribution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="core-products" id="products">
+        <div class="title">
+            <h2>Our Core Product Categories</h2>
+            <p>We focus on high-demand, fast-moving products that keep your inventory competitive and your customers satisfied.</p>
+        </div>
+        <div class="products">
+            <div class="productcard pet-supplies">
+               <div class="container-text">
+                   <h3>Pet Supplies</h3>
+                <p>From everyday pet essentials to specialty care items.</p>
+               </div>
+            </div>
+            
+            <div class="productcard beauty">
+               <div class="container-text">
+                   <h3>Beauty & Personal Care</h3>
+                <p>Skincare, grooming, and beauty must-haves.</p>
+               </div>
+            </div>
+            
+            <div class="productcard tools">
+               <div class="container-text">
+                   <h3>Tools & Home Improvement</h3>
+                   <p>Durable, reliable tools for every project.</p>
+               </div>
+            </div>
+            
+            <div class="productcard appliances">
+               <div class="container-text">
+                   <h3>Small Appliances</h3>
+                <p>Compact, high-quality appliances for home and business.</p>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="floatingsection delivery">
+        <div class="container">
+            <div class="both">
+                <h2>From Inquiry to Delivery — Our Process is Simple</h2>
+                <div class="process">
+                    <div class="card">
+                        <img src="icons/docs.svg" class="purple">
+                        <h3>Request your Quote</h3>
+                        <p>Tell us the products and quantities you need.</p>
+                    </div>
+                    <div class="card">
+                        <img src="icons/shield.svg" class="green">
+                        <h3>Secure Confirmation</h3>
+                        <p>We finalize your order with competitive wholesale rates.</p>
+                    </div>
+                    <div class="card">
+                        <img src="icons/delivery.svg" class="blue">
+                        <h3>Reliable Shipping</h3>
+                        <p>Your order delivered on time, every time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="testimonials floatingsection" id="testimonials">
+        <div class="content">
+            <h2>Trusted by Businesses Worldwide</h2>
+            <div class="row">
+                <div class="left">
+                <div class="testimonial-card">
+                    <p>"We’ve worked with Reliable Wholesales Distribution for over 5 years, and their commitment to quality and timely delivery has never failed. From pet supplies to small appliances, every order arrives perfectly packed, competitively priced, and exactly when promised."</p>
+                    <div class="author">
+                        <div class="photo"><img src="images/ZGJ71WH1Fn4ezGJXBczskjmWb7Q.png"></div>
+                        <div class="authorname">– Michael Carter, Paws & Whiskers Pet Supplies</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="testimonial-card">
+                    <p>"Excellent service and fast delivery! Our store always receives top-quality products on time. Highly recommended!"</p>
+                    <div class="author">
+                        <div class="photo"><img src="images/BYErSevxRmx0C8BeF8VujVt2GyA.png"></div>
+                        <div class="authorname">– Sarah Johnson, Paws & Whiskers Pet Supplies</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Reliable Wholesales has been our go-to partner for bulk orders. Great prices, quality products, and outstanding support."</p>
+                    <div class="author">
+                        <div class="photo"><img src="images/mf1nDnz1Wum2sCqGLb62eCEMbfY.png"></div>
+                        <div class="authorname">– Laura Hernández ,HomePro Tools & Appliances</div>
+                    </div>
+                </div>
+            </div>  
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="contactus" id="contactus">
+        <h2>Contact Us</h2>
+       <div class="container">
+            <div class="left">
+                <h3>Let’s Start Building Your Wholesale Partnership</h3>
+                <p> 
+                    Whether you’re looking to stock up on premium pet supplies, beauty & personal care, tools & home improvement, or small appliances, we’re here to provide the products and support your business needs. Get in touch today and let’s make it happen.
+                </p>
+                <div class="contact-items">
+                    <img src="icons/mail.svg" class="icon green">
+                    <p>info@qualytex-group.com</p>
+                </div>
+                <div class="contact-items">
+                    <img src="icons/map-pin.svg" class="icon blue">
+                    <p>2626 S LOOP W STE 130 HOUSTON, TX 77054</p>
+                </div>    
+            </div>
+            <div class="right">
+                <iframe data-tally-src="https://tally.so/embed/3lGNz5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="394" frameborder="0" marginheight="0" marginwidth="0" title="Contact Us"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+            </div>
+       </div>
+    </div>
+    
+    <footer>
+         <div class="logo">
+            <img src="icons/Icon-logo.svg" alt="Qualytex Group">
+            <span>Qualytex Group</span>
+        </div>
+        <div class="center"><p>Copyright 2025 - Qualytex Group, all rights reserved.</p></div>
+        <div class="right">
+            <a href="#linkFacebook" class="rrss">
+                <img src="icons/facebook.svg">
+            </a>
+            <a href="#linkInstagram" class="rrss">
+                <img src="icons/instagram.svg">
+            </a>
+            <a href="#linkLinkedin" class="rrss">
+                <img src="icons/linkedin.svg">
+            </a>
+            
+            
+            
+        </div>
+    </footer>
+    
 
-  <section class="contact" id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <form action="https://formsubmit.co/info@qualytex-group.com" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 Qualytex Group. All rights reserved.
-  </footer>
-</body>
+    </body>
 </html>
