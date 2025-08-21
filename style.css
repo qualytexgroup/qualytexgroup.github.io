@@ -1269,7 +1269,21 @@ footer .rrss:hover {
     footer p{
         text-align: center;
     }
+
+    div.pet-supplies {
+        background-position: center;
+    }
+    
+    div.beauty {
+        background-position: center;
+    }
+    
+    div.tools {
+        background-position: center;
+    }
+    
 }
+
 
 
 
